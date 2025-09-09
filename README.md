@@ -27,3 +27,17 @@ bddcb9598d885c59af8b0da157fac6eb4a6d7c8c7e0280519c800fd69d92733709a175314d0df13c
 ```
 6fd64cec03188e9cebb43a6a60c4aee24118ddc3ccd65f3aea23a7e4b818495f4529c6a670e28bc28556669b102f84122b4ab371f4efd5554eb48828f5a373bdaa02d6714390f6f34b5c30a49f83b17eb1375d95f80bec0201e0ad462200a78c22697b131a0bbc2839d2ae3b4af89456dab21aa8d3932f1a0f3da7bd5520ca88eb089552f9ae11266e79af5863aa37f396934828ad48fa6bc4627390bb6d35a64ec9c00cfc6405f39cea97d6dcce5e4dac6f
 ```
+
+
+Response:
+```
+{
+  "code": 200, // status code
+  "msg": "test", // message-> development: test, production: success/unauthorize
+  "data": {
+    "uuid": "u-d88da0d2-46bf-419d-8ad5-9df427eaa4e4", // uniquer user id, (same for a user)
+    "email": "test@test.com", // email
+    "t_id": 0 // unique t_id (different for user everytime)
+  }
+}
+```
