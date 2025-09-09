@@ -6,6 +6,10 @@ For testing:
 
 `super_app_id: 728c0822-4550-4aed-99c1-e491dedcc560`
 
+```
+COLD START: The very first request may take a minute time to response
+```
+
 
 Dummy `user_access_tokens`
 ```
