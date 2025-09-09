@@ -44,6 +44,7 @@ Response:
 
 
 Base template for every screen:
+```
 import React, { useContext } from 'react'
 import { UserContext } from '../../../g1/context'
 
@@ -75,3 +76,4 @@ const index = () => {
 
 export default index
 
+```
