@@ -41,3 +41,37 @@ Response:
   }
 }
 ```
+
+
+Base template for every screen:
+import React, { useContext } from 'react'
+import { UserContext } from '../../../g1/context'
+
+const index = () => {
+  const c = useContext(UserContext)
+  
+  if(c.currentUser){
+    if(c.currentUser.code==200){
+      return(
+        <div className='text-center p-5'>
+        Main Content goes here....
+        </div>
+      )
+    }else{
+      return(
+        <div className='text-3xl font-bold tracking-tight text-center'>
+          Unauthorized
+        </div>
+      )
+    }
+  }else{
+    return(
+      <div className='text-3xl font-bold tracking-tight text-center'>
+        Loading...
+      </div>
+    )
+  }
+}
+
+export default index
+
